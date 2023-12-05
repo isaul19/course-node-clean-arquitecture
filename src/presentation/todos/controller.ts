@@ -7,12 +7,6 @@ const todos = [
 ];
 
 export class TodosController {
-  private todos = [
-    { id: 1, text: "Buy milk", createdAt: new Date() },
-    { id: 2, text: "Buy Bread", createdAt: new Date() },
-    { id: 3, text: "Buy Butter", createdAt: new Date() },
-  ];
-
   public static getTodos(req: Request, res: Response) {
     return res.json(todos);
   }
