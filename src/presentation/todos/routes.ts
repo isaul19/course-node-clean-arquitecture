@@ -8,6 +8,8 @@ export class TodosRoutes {
     router.get("/", TodosController.getTodos);
     router.get("/:id", TodosController.getTodoById);
     router.post("/", TodosController.createTodo);
+    router.put("/:id", TodosController.updateTodoById);
+    router.delete("/:id", TodosController.removeTodoById);
 
     return router;
   }
