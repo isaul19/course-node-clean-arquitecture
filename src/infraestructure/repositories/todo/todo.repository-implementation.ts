@@ -1,7 +1,7 @@
 import { TodoDatasource } from "@/domain/datasources";
-import { CreateTodoDto, UpdateTodoDto } from "@/domain/dtos";
-import { TodoEntity } from "@/domain/entities";
 import { TodoRepository } from "@/domain/repositories";
+import { CreateTodoDto, UpdateTodoDto } from "@/domain/dtos/todo";
+import { TodoEntity } from "@/domain/entities";
 
 export class TodoRepositoryImpl implements TodoRepository {
   constructor(private readonly datasource: TodoDatasource) {}

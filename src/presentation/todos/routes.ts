@@ -7,8 +7,8 @@ export class TodosRoutes {
   static get routes(): Router {
     const router = Router();
 
-    const datasoruce = new TodoDataSourceImpl();
-    const todoRepository = new TodoRepositoryImpl(datasoruce);
+    const datasource = new TodoDataSourceImpl();
+    const todoRepository = new TodoRepositoryImpl(datasource);
 
     const todosController = new TodosController(todoRepository);
 
