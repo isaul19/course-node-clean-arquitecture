@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
-import { prisma } from "../../data/postgress";
-import { CreateTodoDto, UpdateTodoDto } from "../../domain/dtos";
-import { TodoRepository } from "../../domain/repositories/todo.repository";
+import { TodoRepository } from "@/domain/repositories/todo";
+import { CreateTodoDto, UpdateTodoDto } from "@/domain/dtos";
 
 export class TodosController {
   constructor(private readonly todoRepository: TodoRepository) {}

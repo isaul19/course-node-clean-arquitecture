@@ -1,7 +1,7 @@
-import { prisma } from "../../data/postgress";
-import { TodoDatasource } from "../../domain/datasources/todo.datasource";
-import { CreateTodoDto, UpdateTodoDto } from "../../domain/dtos";
-import { TodoEntity } from "../../domain/entities/todo.entity";
+import { prisma } from "@/database/postgress";
+import { TodoDatasource } from "@/domain/datasources";
+import { CreateTodoDto, UpdateTodoDto } from "@/domain/dtos";
+import { TodoEntity } from "@/domain/entities";
 
 export class TodoDataSourceImpl implements TodoDatasource {
   public async create(createTodoDto: CreateTodoDto): Promise<TodoEntity> {

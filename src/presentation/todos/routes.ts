@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { TodosController } from "./controller";
-import { TodoDataSourceImpl } from "../../infraestructure/datasource/todo.datasource-implementation";
-import { TodoRepositoryImpl } from "../../infraestructure/repositories/todo.repository-implementation";
+import { TodoDataSourceImpl } from "@/infraestructure/datasource";
+import { TodoRepositoryImpl } from "@/infraestructure/repositories";
 
 export class TodosRoutes {
   static get routes(): Router {
