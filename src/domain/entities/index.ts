@@ -1,1 +1,1 @@
-export * from "./todo";
+export { TodoEntity } from "./todo.entity";

@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { TodoRepository } from "@/domain/repositories/todo";
-import { CreateTodoDto, UpdateTodoDto } from "@/domain/dtos/todo";
+import { TodoRepository } from "@/domain/repositories";
+import { CreateTodoDto, UpdateTodoDto } from "@/domain/dtos";
 
 export class TodosController {
   constructor(private readonly todoRepository: TodoRepository) {}

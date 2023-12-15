@@ -1,1 +1,1 @@
-export * from "./todo";
+export { TodoDatasource } from "./todo.datasource";

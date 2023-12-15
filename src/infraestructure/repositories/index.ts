@@ -1,1 +1,1 @@
-export * from "./todo";
+export { TodoRepositoryImpl } from "./todo.repository-implementation";
