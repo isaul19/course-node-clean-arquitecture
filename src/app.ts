@@ -1,6 +1,8 @@
-import { envs } from "./config/envs";
-import { AppRoutes } from "./presentation/routes";
-import { Server } from "./presentation/server";
+import "module-alias/register";
+
+import { envs } from "@/config/envs";
+import { AppRoutes } from "@/presentation/routes";
+import { Server } from "@/presentation/server";
 
 async function main() {
   const server = new Server({
